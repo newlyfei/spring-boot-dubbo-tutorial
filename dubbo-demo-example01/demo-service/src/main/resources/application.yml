@@ -1,0 +1,17 @@
+spring:
+  profiles:
+      active: dev #开发环境配置
+  extend:
+    dubbo:  # Dubbo 服务提供者配置
+      application:
+        name: provider
+      registry:
+        address: zookeeper://127.0.0.1:2181
+      module:
+        name: test-module
+      monitor:
+        protocol: registry
+      protocol:
+        name: dubbo
+        port: 20880
+      scan: com.tutorial.dubbo
