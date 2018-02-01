@@ -6,7 +6,6 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ConfigurableApplicationContext;
 
 @SpringBootApplication
-@DubboComponentScan(basePackages = "com.tutorial.dubbo.impl")
 public class ServerApplication
 {
     public static void main( String[] args )
